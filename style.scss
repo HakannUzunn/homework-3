@@ -1,0 +1,119 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    margin: 0px 0px;
+}
+.header{
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    z-index: -1;}
+
+.header_logo{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 100px;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    top: 50px;
+    margin-left: 45%;
+    font-size: large;
+    list-style: none;
+}
+
+.header_search{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    size: 100px;
+    gap: 10px;
+}
+
+.header_search-input{
+    background-image: url('img/assets/magnifying-glass.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 214px;
+    padding-left: 20px;
+
+    
+}
+
+.header_scroll{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: white;
+    gap: 10px;
+    
+}
+
+
+
+
+.main_categories {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+}
+
+.main_categories-links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+}
+
+.main_categories-links img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.aside-image {
+    align-self: center; 
+    grid-column: 2; 
+}
+
+
+.main_products {
+    margin: 50px;
+    gap: 20px;
+    padding: 20px;
+    &-women{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    &-men {
+       
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    
+    
+    }
+
+
+.main_products img{
+    max-width: 100%;
+
+}
