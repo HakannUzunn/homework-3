@@ -6,43 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-<div class="wrapper">
+
     <header class="header">
+        <picture>
+            <source media="(max-width: 380px)" srcset="img/mobil.jpg">
 
-        <img class="background-image" src="img/header.jpg" alt="image">
+            <source media="(min-width: 1440px)" srcset="img/header.jpg">
 
+            <img src="img/header.jpg" alt="banner-görseli">
+        </picture>
         <div class="header_logo">
-            MODEVA
+            M <div class="logo">ODEVA</div>
         </div>
-
         <ul class="header_menu">
-            <li><a href="">Catalog</a></li>
-            <li><a href="">Sale</a></li>
-            <li><a href="#">New Arrival</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="" style="color: white;">Catalog</a></li>
+            <li><a href="" style="color: white;">Sale</a></li>
+            <li><a href="#" style="color: white;">New Arrival</a></li>
+            <li><a href="" style="color: white;">About</a></li>
         </ul>
-
         <label class="header_search">
             <input class="header_search-input" type="text" placeholder="Search">
             <a href=""><img class="user" src="img/assets/user.svg" alt=""></a>
             <a href=""><img class="shopping-cart" src="img/assets/shopping-cart.svg" alt=""></a>
-
         </label>
+        <div class="header_products">
+            <div class="header_products-item1">
+                <img src="img/product-0.jpg" alt="">
+                <div class="item1_description">
+                    <h2>Product Name in Here</h2>
+                    <p>IDR 300.000</p>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="header_products-item2">
+                <img src="img/product-0.jpg" alt="">
+                <div class="item2_description">
+                    <h2>Product Name in Here</h2>
+                    <p>IDR 300.000</p>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+
+            <img src="" alt="">
+        </div>
+
         <div class="header_scroll">
             SCROLL DOWN
             <img src="img/assets/chevron-double-down.svg" alt="scroll-image">
         </div>
+        <div class="hamburger_menu" style="color: white;">
+            Menu
+            <img src="img/assets/chevron-down.svg" alt="scroll-image">
+        </div>
+
     </header>
     <main class="main">
         <section class="main_categories">
             <div class="main_categories-links">
-                <img src="img/main-3.jpg" alt="Photo 1">
-                <div class="caption">Formal Women</div>
-                <img src="img/main-2.jpg" alt="Photo 2">
-                <div class="caption">Formal Men</div>
+                <div class="woman">
+                    <img src="img/main-3.jpg" alt="Photo 1">
+                    <div class="caption">Formal Women</div>
+                </div>
+
+                <div class="men">
+                    <img src="img/main-2.jpg" alt="Photo 2">
+                    <div class="caption">Formal Men</div>
+                </div>
+
             </div>
             <div class="main_categories-links aside-image">
                 <img src="img/main-1.png" alt="Photo 3">
@@ -54,69 +91,146 @@
                 THE BEST DRESS FOR THE BEST WOMAN
             </div>
             <div class="main_products-women">
-                
+
                 <div class="main_products-links">
-                    <img src="img/product-1.jpg" alt="Photo 2">
+                    <img src="img/product-1.jpg" alt="Photo 1">
                     <h2>product name</h2>
                     <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
                 </div>
                 <div class="main_products-links">
                     <img src="img/product-2.jpg" alt="Photo 2">
                     <h2>product name</h2>
                     <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
+
                 </div>
                 <div class="main_products-links">
-                    <img src="img/product-3.jpg" alt="Photo 2">
+                    <img src="img/product-3.jpg" alt="Photo 3">
                     <h2>product name</h2>
                     <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
+
                 </div>
                 <div class="main_products-links">
-                    <img src="img/product-4.jpg" alt="Photo 2">
+                    <img src="img/product-4.jpg" alt="Photo 4">
                     <h2>product name</h2>
                     <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
+
                 </div>
+                <button class="button">SEE MORE -></button>
             </div>
             <div class="main_products-title">
                 BEST OUTFIT FOR YOUR HAPPINESS
             </div>
             <div class="main_products-men">
-                
+
                 <div class="main_products-links">
-                    <img src="img/product-5.jpg" alt="Photo 2">
+                    <img src="img/product-5.jpg" alt="Photo 1">
                     <h2>product name</h2>
                     <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
+
                 </div>
                 <div class="main_products-links">
                     <img src="img/product-6.jpg" alt="Photo 2">
                     <h2>product name</h2>
                     <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
-                </div>
-                <div class="main_products-links">
-                    <img src="img/product-7.jpg" alt="Photo 2">
-                    <h2>product name</h2>
-                    <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
-                </div>
-                <div class="main_products-links">
-                    <img src="img/product-8.jpg" alt="Photo 2">
-                    <h2>product name</h2>
-                    <p>IDR XXX</p>
-                    <div class="caption">Formal Men</div>
-                </div>
 
+                </div>
+                <div class="main_products-links">
+                    <img src="img/product-7.jpg" alt="Photo 3">
+                    <h2>product name</h2>
+                    <p>IDR XXX</p>
+
+                </div>
+                <div class="main_products-links">
+                    <img src="img/product-8.jpg" alt="Photo 4">
+                    <h2>product name</h2>
+                    <p>IDR XXX</p>
+
+                </div>
+                <button class="button">SEE MORE -></button>
             </div>
         </section>
-    </main>
-    <footer>
+        <div class="menu_description">
 
+            <article class="menu_description-item1">
+                <div class="circle">
+                    <img src="img/assets/hand.svg" alt="">
+                </div>
+                <h3>%100 Satisfaction Guaranteed</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laoreet scelerisque morbi vulputate. Quisque
+                    bibendum eget id diam elementum fringilla duis.</p>
+            </article>
+            <div class="menu_description-center">
+                <article class="description_center-item2">
+                    <div class="circle">
+                        <img src="img/assets/phone.svg" alt="">
+                    </div>
+                    <div class="item2_description">
+                        <h3>24/7 Online Service</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laoreet scelerisque morbi vulputate.
+                            Quisque bibendum eget id diam elementum fringilla duis.</p>
+                    </div>
+
+                </article>
+                <article class="description_center-item3">
+                    <div class="circle">
+                        <img src="img/assets/rocket.svg" alt="">
+                    </div>
+                    <div class="item3_description">
+                        <h3>Fast Delivery</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laoreet scelerisque morbi vulputate.
+                            Quisque bibendum eget id diam elementum fringilla duis.</p>
+                    </div>
+                </article>
+            </div>
+            <article class="menu_description-item4">
+                <div class="circle">
+                    <img src="img/assets/creditcard.svg" alt="">
+                </div>
+                <h3>Payment With Secure System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laoreet scelerisque morbi vulputate. Quisque
+                    bibendum eget id diam elementum fringilla duis.</p>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+
+        <div class="footer_contacts">
+            <div class="footer_contacts-title">MODEVA</div>
+            <a href="tel:+62 859 9999 999">WhatsApp: +62 859 9999 999</a>
+            <a href="mailto:hello@modeva.com">Email: hello@modeva.com</a>
+            <address style="color: white;">Address: Lorem ipsum street Block B Number 08, Jakarta, Indonesia, 12345
+            </address>
+        </div>
+        <div class="footer_nav">
+            <div class="footer_nav-menu"> Menu
+                <a href="" style="color: white;">Sale</a>
+                <a href="" style="color: white;">New Arrivals</a>
+                <a href="" style="color: white;">Formal Men</a>
+                <a href="" style="color: white;">Formal Woman</a>
+                <a href="" style="color: white;">Casual Men</a>
+                <a href="" style="color: white;">Casual Woman</a>
+            </div>
+            <div class="footer_nav-help"> Get Help
+                <a href="" style="color: white;">FAQ</a>
+                <a href="" style="color: white;">Costumer Service</a>
+                <a href="" style="color: white;">Refund and Return</a>
+                <a href="" style="color: white;">Terms and Conditions</a>
+                <a href="" style="color: white;">Shipping</a>
+            </div>
+            <div class="footer_nav-account"> Account
+                <a href="" style="color: white;">My Account</a>
+                <a href="" style="color: white;">My Orders</a>
+                <a href="" style="color: white;">Vouchers and Discounts</a>
+            </div>
+
+        </div>
+        <div class="footer_copyright" style="color: white;">
+            <p>All rights reserved <br>
+                Copyright 2023 By Modeva Fashion
+            </p>
+        </div>
     </footer>
-</div>
+
 </body>
 
 </html>
